@@ -1,0 +1,111 @@
+$bc-button1: linear-gradient(20deg, #ff79da, #9356dc);
+
+.button1 {
+  display: flex;
+  background: $bc-button1;
+  font-size: 16px;
+  color: white;
+  justify-content: center;
+  margin: 25px 75px 57px 82px;
+  padding: 18px;
+  border-radius: 30px;
+  box-shadow: 4px 10px 10px lightgray;
+  border: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: box-shadow 1s ease;
+}
+
+.button1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  border-radius: 30px;
+  transition: opacity 1s ease;
+}
+
+.button1:hover {
+  box-shadow: 4px 10px 10px #a0a0a0;
+}
+
+.button1:hover:after {
+  opacity: 1;
+}
+
+/* button 2 */
+$bc-button2: #f6f6f6;
+.button2 {
+  display: flex;
+  background-color: $bc-button2;
+  align-items: center;
+  width: 90%;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 5px 10px lightgray;
+  position: relative;
+  z-index: 1;
+  counter-increment: button;
+
+  i {
+    margin-right: 27px;
+    font-size: 20px;
+    color: #7e7e7e;
+  }
+
+  &::before {
+    content: counter(button);
+    background-color: var(--main-color);
+    color: white;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 10px;
+    left: 0;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    border-radius: 50%;
+  }
+
+  &:hover {
+    &::after {
+      content: "";
+      opacity: 1;
+      filter: brightness(120%);
+      box-shadow: 1px 5px 10px gray;
+      transition: all 1s;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $bc-button2;
+    border-radius: 20px;
+    opacity: 0;
+    z-index: -1;
+    transition: all 1s;
+  }
+}

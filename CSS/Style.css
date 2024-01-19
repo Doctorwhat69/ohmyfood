@@ -1,0 +1,275 @@
+:root {
+  --main-color: #9356dc;
+  --second-color: #ff79da;
+  --third-color: #99e2d0;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #353535;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  width: 50%;
+}
+
+.section-title {
+  padding-left: 20px;
+  padding-top: 25px;
+  padding-bottom: 26px;
+  font-size: 28;
+  font-weight: 900;
+  color: black;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  display: flex;
+  margin: 0px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-sizing: content-box;
+}
+
+/* location */
+.location {
+  width: 100%;
+  font-weight: 600;
+  box-sizing: border-box;
+  box-shadow: inset 0em 0.1em 5px grey;
+  background-color: #eaeaea;
+  margin-bottom: 0px;
+}
+
+.location i {
+  padding-right: 15px;
+}
+/* cta */
+.cta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 0px;
+  justify-content: center;
+  margin: 0px;
+  background-color: #f6f6f6;
+}
+
+.cta p {
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 7px;
+}
+
+.cta h2 {
+  padding-left: 70px;
+  margin-bottom: 7px;
+  color: black;
+  font-weight: bold;
+  padding-right: 70px;
+  text-align: center;
+}
+
+.cta p {
+  font-size: 18px;
+}
+
+.button1 {
+  display: flex;
+  background: linear-gradient(#ff79da, #9356dc);
+  font-size: 16px;
+  color: white;
+  justify-content: center;
+  margin-left: 82px;
+  margin-right: 75px;
+  margin-bottom: 57px;
+  margin-top: 25px;
+  padding: 18px;
+  border-radius: 30px;
+  box-shadow: 4px 10px 10px lightgray;
+
+  border: none;
+}
+/* fonctionnement */
+.fonctionnement {
+  padding-bottom: 45px;
+}
+.content-fonctionnement {
+  display: flex;
+  flex-direction: column;
+}
+
+.button2 {
+  display: flex;
+  background-color: #f6f6f6;
+  align-items: center;
+  width: 90%;
+  font-size: 16px;
+  font-weight: bold;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
+  padding-top: 30px;
+  padding-bottom: 25px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 1px 5px 10px lightgray;
+  position: relative;
+  counter-increment: button;
+}
+
+.button2::before {
+  content: counter(button);
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 5%;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  border-radius: 50%;
+}
+
+.button2 i {
+  margin-right: 27px;
+  font-size: 20;
+  color: #7e7e7e;
+}
+/* restaurants */
+.restaurants {
+  background-color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 23px;
+  padding-left: 17px;
+  padding-right: 18px;
+  padding-bottom: 60px;
+}
+
+.card-restaurant {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.card-restaurant a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-restaurant img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  min-height: 85px;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.card-text p {
+  padding: 0px;
+  font-size: 22;
+  padding-top: 10px;
+  margin: 0px;
+}
+.card-text h3 {
+  padding: 0px;
+  font-size: 23;
+  margin: 0px;
+}
+
+.card-content i {
+  padding-right: 20px;
+  padding-top: 10px;
+  font-size: 30;
+  font-weight: 100;
+}
+/* footer */
+
+.logo-footer {
+  width: 100px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+footer {
+  background-color: #353535;
+}
+
+.menu-footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.menu-footer a {
+  color: white;
+  padding-bottom: 10px;
+}
